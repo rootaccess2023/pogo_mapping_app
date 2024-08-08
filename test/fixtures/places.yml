@@ -1,0 +1,35 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  longitude: 1.5
+  latitude: 1.5
+  address: MyString
+  is_2017: false
+  is_2018: false
+  is_2019: false
+  is_2020: false
+  is_2021: false
+  is_2022: false
+  is_2023: false
+  is_2024: false
+  description: MyText
+  img_url: MyText
+  pogo_type: MyString
+
+two:
+  name: MyString
+  longitude: 1.5
+  latitude: 1.5
+  address: MyString
+  is_2017: false
+  is_2018: false
+  is_2019: false
+  is_2020: false
+  is_2021: false
+  is_2022: false
+  is_2023: false
+  is_2024: false
+  description: MyText
+  img_url: MyText
+  pogo_type: MyString
