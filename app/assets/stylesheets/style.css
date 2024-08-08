@@ -6,6 +6,10 @@
     font-family: "Montserrat-SemiBold";
 }
 
+.custom-navheight {
+    height: calc(100vh - 4.7rem);
+}
+
 .custom-height {
     height: calc(100vh - 26rem);
 }
