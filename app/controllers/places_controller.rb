@@ -25,6 +25,6 @@ class PlacesController < ApplicationController
   def report
   end
 
-  def timeline
+  def history
   end
 end

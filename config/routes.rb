@@ -5,5 +5,5 @@ Rails.application.routes.draw do
 
   get "/map", to: "places#index"
   get "/report", to: "places#report"
-  get "/timeline", to: "places#timeline"
+  get "/history", to: "places#history"
 end
