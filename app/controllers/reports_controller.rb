@@ -4,11 +4,12 @@ class ReportsController < ApplicationController
   end
 
   def create
+    @user = current_user
     @report = Report.new(report_params)
     if @report.save
       redirect_to new_report_path, notice: 'Thank you for your report. It has been submitted successfully.'
     else
-      render :new
+      render :new, alert: "There was a problem saving your report"
     end
   end
 
@@ -23,7 +24,7 @@ class ReportsController < ApplicationController
 
 
   def index
-    @reports = Report.all
+    @reports = current_user.reports
     year = params[:year]
     @places = if year.nil?
                   Place.where("is_2017", true)
@@ -39,6 +40,6 @@ class ReportsController < ApplicationController
   private
 
   def report_params
-    params.require(:report).permit(:name, :pogo_hub_name, :address, :nearby_landmarks, :activities, :individuals, :vehicles, :other_evidence)
+    params.require(:report).permit(:name, :pogo_hub_name, :address, :nearby_landmarks, :activities, :individuals, :vehicles, :summary, :user_id)
   end
 end
