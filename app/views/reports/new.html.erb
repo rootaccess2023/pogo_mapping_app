@@ -25,61 +25,58 @@
       <div>
         <p class="mt-1 text-sm leading-6 text-gray-600">Please provide the details of the report.</p>
         <div class="flex flex-col gap-2">
-          <div class="hidden sm:col-span-4">
-            <%= form.label :name, class: "block text-sm font-medium leading-6 text-gray-900" %>
-            <div class="mt-2">
-              <%= form.text_field :name, class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
-            </div>
-          </div>
 
           <div class="sm:col-span-4">
             <%= form.label :pogo_hub_name, class: "block text-sm font-medium leading-6 text-gray-900" %>
             <div class="mt-2">
-              <%= form.text_field :pogo_hub_name, class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
+              <%= form.text_field :pogo_hub_name, class: "block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
             </div>
           </div>
 
           <div class="sm:col-span-6">
             <%= form.label :address, class: "block text-sm font-medium leading-6 text-gray-900" %>
             <div class="mt-2">
-              <%= form.text_field :address, class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
+              <%= form.text_field :address, class: "block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
             </div>
           </div>
 
           <div class="sm:col-span-6">
             <%= form.label :nearby_landmarks, class: "block text-sm font-medium leading-6 text-gray-900" %>
             <div class="mt-2">
-              <%= form.text_field :nearby_landmarks, class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
+              <%= form.text_field :nearby_landmarks, class: "block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
             </div>
           </div>
 
           <div class="sm:col-span-6">
             <%= form.label :activities, class: "block text-sm font-medium leading-6 text-gray-900" %>
             <div class="mt-2">
-              <%= form.text_field :activities, class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
+              <%= form.text_field :activities, class: "block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
             </div>
           </div>
 
           <div class="sm:col-span-6">
             <%= form.label :individuals, class: "block text-sm font-medium leading-6 text-gray-900" %>
             <div class="mt-2">
-              <%= form.text_field :individuals, class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
+              <%= form.text_field :individuals, class: "block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
             </div>
           </div>
 
           <div class="sm:col-span-6">
             <%= form.label :vehicles, class: "block text-sm font-medium leading-6 text-gray-900" %>
             <div class="mt-2">
-              <%= form.text_field :vehicles, class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
+              <%= form.text_field :vehicles, class: "block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
             </div>
           </div>
 
           <div class="sm:col-span-6">
             <%= form.label :summary, class: "block text-sm font-medium leading-6 text-gray-900" %>
             <div class="mt-2">
-              <%= form.text_area :summary, class: "block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6" %>
+              <%= form.text_area :summary, class: "block w-full rounded-md border-0 px-2 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6", placeholder: "Briefly describe what you observed." %>
             </div>
           </div>
+
+          <%= form.hidden_field :name, value: current_user.email %>
+          <%= form.hidden_field :user_id, value: current_user.id %>
         </div>
 
         <div class="mt-6 flex items-center justify-end gap-x-6">
