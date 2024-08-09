@@ -75,3 +75,4 @@ group :test do
 end
 
 gem 'httparty', '~> 0.22.0'
+gem "devise", "~> 4.9"
