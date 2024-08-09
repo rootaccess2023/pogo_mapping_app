@@ -1,6 +1,8 @@
-<main class="">
+    <main class="">
     <section class="bg-black flex flex-col justify-end pb-2">
         <%= render "places/home_header"%>
+    </section>
+        <%= render "places/home_news"%>
     </section>
     <section class="bg-slate-900 flex flex-col justify-center px-8 p-8 md:h-screen md:px-16">
         <%= render "places/home_map"%>
@@ -8,10 +10,7 @@
     <section class="bg-slate-800 flex flex-col justify-center px-8 p-8 md:h-screen md:px-16">
         <%= render "places/home_timeline"%>
     </section>
-    <section class="bg-slate-900 flex flex-col justify-center px-8 p-8 md:h-screen md:px-16">
-        <%= render "places/home_news"%>
-    </section>
-    <section class="">
+    <section class="bg-slate-900">
         <%= render "places/home_footer"%>
     </section>
 </main>

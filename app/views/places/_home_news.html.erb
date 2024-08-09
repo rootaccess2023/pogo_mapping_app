@@ -1,18 +1,20 @@
-<section class="px-8 mb-8 md:px-16">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<section class="px-8 md:px-16 bg-black">
+    <div class="flex overflow-scroll no-scrollbar">
         <% @news.each do |article| %>
             <% if article['title'] && article['urlToImage'] && article['author'] && article['description'] %>
-                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-                    <a href="<%= article['url'] %>" target="_blank" class="block">
-                        <% if article['urlToImage'] %>
-                            <img class="w-full object-cover h-80 lg:h-60" src="<%= article['urlToImage'] %>" alt="Image for <%= article['title'] %>" />
-                        <% end %>
-                        <div class="p-4">
-                            <h3 class="text-lg font-semibold mb-2">
-                                <%= article['title'] %>
-                            </h3>
-                        </div>
-                    </a>
+                <div class="max-w-full px-4 mb-8">
+                    <div class="w-80 rounded-lg shadow-lg">
+                        <a href="<%= article['url'] %>" target="_blank" class="block">
+                            <% if article['urlToImage'] %>
+                                <img class="w-full object-cover h-80 lg:h-60" src="<%= article['urlToImage'] %>" alt="Image for <%= article['title'] %>" />
+                            <% end %>
+                            <div class="p-4">
+                                <h3 class="text-lg text-white font-semibold mb-2">
+                                    <%= article['title'] %>
+                                </h3>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             <% end %>
         <% end %>
