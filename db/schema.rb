@@ -10,9 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_08_08_082440) do
+ActiveRecord::Schema[7.0].define(version: 2024_08_08_180601) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "locations", force: :cascade do |t|
+    t.string "name"
+    t.float "longitude"
+    t.float "latitude"
+    t.string "address"
+    t.boolean "is_2017"
+    t.boolean "is_2018"
+    t.boolean "is_2019"
+    t.boolean "is_2020"
+    t.boolean "is_2021"
+    t.boolean "is_2022"
+    t.boolean "is_2023"
+    t.boolean "is_2024"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "places", force: :cascade do |t|
     t.string "name"
@@ -30,6 +47,19 @@ ActiveRecord::Schema[7.0].define(version: 2024_08_08_082440) do
     t.text "description"
     t.text "img_url"
     t.string "pogo_type"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "reports", force: :cascade do |t|
+    t.string "name"
+    t.string "pogo_hub_name"
+    t.string "address"
+    t.string "nearby_landmarks"
+    t.text "activities"
+    t.text "individuals"
+    t.text "vehicles"
+    t.text "summary"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
