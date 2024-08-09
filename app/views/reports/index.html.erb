@@ -1,10 +1,13 @@
-<main class="flex flex-col relative z-1">
+<main class="flex flex-col relative z-1 " data-controller="report-detail">
     <div class="flex flex-col-reverse md:flex-row flex-1">
-        <div class="md:h-screen bg-gray-600 p-2">
+        <div class="md:h-screen bg-gray-600 p-2 z-10">
             <%= render "places/sidebar" %>
         </div>
-        <div class="hidden w-full max-w-[24.5rem] md:h-screen md:overflow-scroll md:w-[24.5rem] md:block bg-[#fcfdfd]">
+        <div data-report-detail-target="toggleReportDescription" class="hidden w-full md:max-w-[24.5rem] custom-reportdisplay md:h-screen overflow-scroll md:w-[24.5rem] bg-[#fcfdfd]">
             <%= render "reports/index_list" %>
+        </div>
+        <div class="flex justify-center md:items-center bg-gray-500">
+            <svg data-action="click->report-detail#toggleDescription click->report-detail#toggleArrow click->report-detail#toggleNavheight" data-report-detail-target="toggleArrow" class="size-6 px-2 bg-gray-200 rotate-360" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="80.593px" height="122.88px" viewBox="0 0 80.593 122.88" enable-background="new 0 0 80.593 122.88" xml:space="preserve"><g><polygon points="0,0 30.82,0 80.593,61.44 30.82,122.88 0,122.88 49.772,61.44 0,0"/></g></svg>
         </div>
         <div class="flex-1">
             <%= render "places/map", places:@places %>

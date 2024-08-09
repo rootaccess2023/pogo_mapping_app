@@ -1,4 +1,4 @@
-<div class="h-screen bg-[#fcfdfd] relative pt-8">
+<div class="custom-detailheight md:h-screen bg-[#fcfdfd] relative pt-8">
     <section class="bg-white px-6 pb-4 border-b">
         <form class="flex items-center max-w-full mx-auto">
             <label for="simple-search" class="sr-only">Search</label>
@@ -18,9 +18,9 @@
             </button>
         </form>
     </section>
-    <section class="pb-3 w-[24.5rem]">
+    <section class="pb-3 md:w-[24.5rem]">
         <div class="bg-white">
-            <ol class="no-scrollbar flex max-h-[11rem] overflow-scroll max-w-[22.5rem] mx-auto">
+            <ol class="no-scrollbar flex max-h-[11rem] overflow-scroll max-w-[25.5rem] md:max-w-[22.5rem] mx-auto">
             <% default_year = "2017" %>
             <% current_year = params[:year] || default_year %>
             <% (2017..2024).each do |year| %>
@@ -37,28 +37,61 @@
         <div class="px-6 pt-4">
         <% case current_year %>
         <% when "2017" %>
-            <%= image_tag 'https://i.postimg.cc/DwxXwtkS/manila-1.jpg', alt: 'Manila Cityscape', class: "h-auto rounded-lg shadow" %>
-            <p class="absolute top-[19rem] left-12 text-white text-xl font-bold">The Rise of POGO</p>
+            <section class="relative flex justify-center items-center">
+            <div class="relative">
+                <%= image_tag 'https://i.postimg.cc/DwxXwtkS/manila-1.jpg', alt: 'Manila Cityscape', class: "h-[15rem] md:h-auto rounded-lg shadow" %>
+                <p class="absolute bottom-4 left-1/2 transform -translate-x-1/2 md:w-full md:pl-6 text-white text-xl font-bold">The Rise of POGO</p>
+            </div>
+            </section>
         <% when "2018" %>
-            <%= image_tag 'https://i.postimg.cc/XvWbZ9XZ/pacor.png', alt: 'PAGCOR', class: "h-auto rounded-lg shadow" %>
-            <p class="absolute top-[19rem] left-12 text-white text-xl font-bold">Regulatory Developments</p>
+            <section class="relative flex justify-center items-center">
+            <div class="relative">
+                <%= image_tag 'https://i.postimg.cc/XvWbZ9XZ/pacor.png', alt: 'PAGCOR', class: "h-[15rem] md:h-auto rounded-lg shadow" %>
+                <p class="absolute bottom-4 left-1/2 transform -translate-x-1/2 md:w-full md:pl-6 text-white text-xl font-bold">Regulatory Developments</p>
+            </div>
+            </section>
         <% when "2019" %>
-            <%= image_tag 'https://i.postimg.cc/VLCZSR5z/protests.png', alt: 'PAGCOR', class: "h-auto rounded-lg shadow" %>
-            <p class="absolute top-[19rem] left-12 text-white text-xl font-bold">Economic and Controversies</p>
+            <section class="relative flex justify-center items-center">
+            <div class="relative">
+                <%= image_tag 'https://i.postimg.cc/VLCZSR5z/protests.png', alt: 'PAGCOR', class: "h-[15rem] md:h-auto rounded-lg shadow" %>
+                <p class="absolute bottom-4 left-1/2 transform -translate-x-1/2 md:w-full md:pl-6 text-white text-xl font-bold">Economic and Controversies</p>
+            </div>
+            </section>
         <% when "2020" %>
-            <%= image_tag 'https://i.postimg.cc/VLCZSR5z/protests.png', alt: 'POGO Protest', class: "h-auto rounded-lg shadow" %>
-            <p class="absolute top-[19rem] left-12 text-white text-xl font-bold">The Impact of COVID-19</p>
+            <section class="relative flex justify-center items-center">
+            <div class="relative">
+                <%= image_tag 'https://i.postimg.cc/VLCZSR5z/protests.png', alt: 'POGO Protest', class: "h-[15rem] md:h-auto rounded-lg shadow" %>
+                <p class="absolute bottom-4 left-1/2 transform -translate-x-1/2 md:w-full md:pl-6 text-white text-xl font-bold">The Impact of COVID-19</p>
+            </div>
+            </section>
         <% when "2021" %>
-            <%= image_tag 'https://i.postimg.cc/y8bx8tY8/offices.png', alt: 'Empty POGO Offices', class: "h-auto rounded-lg shadow" %>
-            <p class="absolute top-[19rem] left-12 text-white text-xl font-bold">Illegal Operations</p>
+            <section class="relative flex justify-center items-center">
+            <div class="relative">
+                <%= image_tag 'https://i.postimg.cc/y8bx8tY8/offices.png', alt: 'Empty POGO Offices', class: "h-[15rem] md:h-auto rounded-lg shadow" %>
+                <p class="absolute bottom-4 left-1/2 transform -translate-x-1/2 md:w-full md:pl-6 text-white text-xl font-bold">Illegal Operations</p>
+            </div>
+            </section>
         <% when "2022" %>
-            <%= image_tag 'https://i.postimg.cc/4dRkxbD0/pogo.png', alt: 'PAGCOR Tax', class: "h-auto rounded-lg shadow" %>
-            <p class="absolute top-[19rem] left-12 text-white text-xl font-bold">Taxation and Policy</p>
+            <section class="relative flex justify-center items-center">
+            <div class="relative">
+                <%= image_tag 'https://i.postimg.cc/4dRkxbD0/pogo.png', alt: 'PAGCOR Tax', class: "h-[15rem] md:h-auto rounded-lg shadow" %>
+                <p class="absolute bottom-4 left-1/2 transform -translate-x-1/2 md:w-full md:pl-6 text-white text-xl font-bold">Taxation and Policy</p>
+            </div>
+            </section>
         <% when "2023" %>
-            <%= image_tag 'https://i.postimg.cc/xj7y7fz6/job.png', alt: 'Job Displacement due to POGO Closure', class: "h-auto rounded-lg shadow" %>
-            <p class="absolute top-[19rem] left-12 text-white text-xl font-bold">Industry Decline</p>
+            <section class="relative flex justify-center items-center">
+            <div class="relative">
+                <%= image_tag 'https://i.postimg.cc/xj7y7fz6/job.png', alt: 'Job Displacement due to POGO Closure', class: "h-[15rem] md:h-auto rounded-lg shadow" %>
+                <p class="absolute bottom-4 left-1/2 transform -translate-x-1/2 md:w-full md:pl-6 text-white text-xl font-bold">Industry Decline</p>
+            </div>
+            </section>
         <% when "2024" %>
-            <%= image_tag 'https://i.postimg.cc/jSTPfvmb/New-Project.png', alt: 'POGO Ban', class: "h-auto rounded-lg shadow" %>
+            <section class="relative flex justify-center items-center">
+            <div class="relative">
+                <%= image_tag 'https://i.postimg.cc/jSTPfvmb/New-Project.png', alt: 'POGO Ban', class: "h-[15rem] md:h-auto rounded-lg shadow" %>
+                <p class="absolute bottom-4 left-1/2 transform -translate-x-1/2 md:w-full md:pl-6 text-white text-xl font-bold">Upcoming Changes</p>
+            </div>
+            </section>
         <% end %>
         </div>
     </section>
@@ -68,7 +101,7 @@
     </h4>
     <section class="pl-6 pr-3">
         <% if @places.present? %>
-            <ul class="custom-height overflow-scroll">
+            <ul class="custom-listheight custom-height overflow-scroll">
                 <% @places.each do |place| %>
                     <%= link_to place_path(place), class: "flex mr-3 group border-b-[1px] border-zinc-100 bg-white" do %>
                         <div class="transition-all duration-4000ms w-[5px] bg-blue-500 opacity-0 invisible group-hover:opacity-100 group-hover:visible"></div>                        <div class="w-full flex flex-col p-4 group-hover:bg-[#eff5f7] ">

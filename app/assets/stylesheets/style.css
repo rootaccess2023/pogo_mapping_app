@@ -7,20 +7,41 @@
 }
 
 .custom-navheight {
-    height: calc(100vh - 4.7rem);
-}
-
-.custom-height {
-    height: calc(100vh - 26rem);
-}
-
-.custom-showheight {
-    height: calc(100vh - 30.5rem);
+    height: calc(100vh - 6.2rem);
 }
 
 .custom-reportheight{
     height: calc(100vh - 24.5rem);
 }
+
+.custom-detailheight{
+    height: calc(100vh - 6.2rem);
+}
+
+.custom-listheight{
+    height: calc(100vh - 34rem);
+}
+
+.custom-showdetailheight {
+    height: calc(100vh - 37rem);
+}
+
+.custom-reportdisplay{
+    height: calc(100vh - 6.2rem);
+}
+
+.rotate-180 {
+    transform: rotate(180deg);
+    transition: transform 0.8s ease;
+}
+
+.rotate-360 {
+    transform: rotate(360deg);
+    transition: transform 0.8s ease;
+}
+
+
+
 
 /* Hide scrollbar for Chrome, Safari and Opera */
 .no-scrollbar::-webkit-scrollbar {
@@ -33,24 +54,15 @@
     scrollbar-width: none;  /* Firefox */
 }
 
-/* Swiper JS Styles */
+@media (min-width: 768px) {
+    /* Styles for screens larger than 768px */
+    .custom-height {
+        height: calc(100vh - 26rem);
+    }
 
-.swiper {
-    width: 100%;
-    height: fit-content;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #e11d48;
-    font-size: 20px;
-}
-
-.swiper-button-prev::after, .swiper-button-next::after {
-    color: #e11d48;
+    .custom-showheight {
+        height: calc(100vh - 30.5rem);
+    }
 }
 
 /* Font Styles */
