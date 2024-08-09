@@ -1,0 +1,7 @@
+<%= turbo_frame_tag "modal" do %>
+<main class="w-full bg-red-100 h-[16.5rem]">
+    <h1><%= @report.id %> Report</h1>
+
+    <%= link_to 'Cancel', "#", data: { controller: "modals", action: "modals#close" } %>
+</main>
+<% end %>

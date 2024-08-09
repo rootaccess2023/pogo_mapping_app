@@ -1,0 +1,73 @@
+<h1>Report a Suspected POGO Hub</h1>
+
+<%= form_with(model: @report, local: true, html: { id: 'report-form' }) do |form| %>
+  <% if @report.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@report.errors.count, "error") %> prohibited this report from being saved:</h2>
+      <ul>
+        <% @report.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pogo_hub_name %>
+    <%= form.text_field :pogo_hub_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :address %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div class="field">
+    <%= form.label :nearby_landmarks %>
+    <%= form.text_field :nearby_landmarks %>
+  </div>
+
+  <div class="field">
+    <%= form.label :activities %>
+    <%= form.text_area :activities %>
+  </div>
+
+  <div class="field">
+    <%= form.label :individuals %>
+    <%= form.text_area :individuals %>
+  </div>
+
+  <div class="field">
+    <%= form.label :vehicles %>
+    <%= form.text_area :vehicles %>
+  </div>
+
+  <div class="field">
+    <%= form.label :summary %>
+    <%= form.text_area :summary %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Submit Report', id: 'submit-button' %>
+  </div>
+<% end %>
+
+<%= link_to 'View Submitted Reports', reports_path %>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const form = document.getElementById('report-form');
+    const submitButton = document.getElementById('submit-button');
+    
+    submitButton.addEventListener('click', function(event) {
+      if (!confirm('Are you sure you want to submit this report?')) {
+        event.preventDefault();
+      }
+    });
+  });
+</script>
