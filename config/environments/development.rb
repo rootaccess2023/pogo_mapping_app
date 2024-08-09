@@ -70,4 +70,18 @@ Rails.application.configure do
   
   # Devise config for receiving mailers
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+  #Ensure that webconsole::middleware is loaded after rack::deflater in middleware stack
+  config.middleware.insert_before 0, Rack::Deflater
+
+  #Enable webconsole
+  config.after_initialize do
+  if Rails.env.development?
+    require "web-console"
+    WebConsole.activate!
+  end
+  
+end
+
+
 end
