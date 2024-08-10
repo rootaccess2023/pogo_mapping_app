@@ -67,7 +67,7 @@ Rails.application.configure do
 
   # Uncomment if you wish to allow Action Cable access from any origin.
   # config.action_cable.disable_request_forgery_protection = true
-  
+
   # Devise config for receiving mailers
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
@@ -78,9 +78,8 @@ Rails.application.configure do
   config.after_initialize do
   if Rails.env.development?
     require "web-console"
-    WebConsole.activate!
   end
-  
+
 end
 
 
