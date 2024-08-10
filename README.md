@@ -1,24 +1,81 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# POGO Mapping App
 
-Things you may want to cover:
+An app designed to provide a map and timeline of Philippine Offshore Gaming Operators from 2017 until 2024.
 
-* Ruby version
 
-* System dependencies
+## Features
+- Map with marked locations of POGOs
+- Details of individual POGO
+- Year filter for POGO operations
+- Timeline and documentation of POGO operations
+- Report function (requires sign-in)
 
-* Configuration
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
+## Demo
 
-* Services (job queues, cache servers, search engines, etc.)
+Link 1: [https://pogo-mapping-app.onrender.com/]
 
-* Deployment instructions
+Link 2: [https://pogo-mapping-app-delc.onrender.com/]
 
-* ...
+
+## Run Locally
+
+Prerequisites
+- Ruby on Rails
+- Bundler
+
+Clone the project
+
+```bash
+  git clone https://github.com/rootaccess2023/pogo_mapping_app.git
+```
+
+Go to the project directory
+
+```bash
+  cd pogo_mapping_app
+```
+
+Install dependencies
+
+```bash
+  bundle install
+```
+
+Add ESbuild and Tailwind CSS
+
+```bash
+  yarn add esbuild tailwindcss
+```
+
+Prepare the database
+
+```bash
+  rails db:create
+  rails db:migrate
+  rails db:seed
+```
+
+Start the server
+
+```bash
+  ./bin/dev
+```
+
+
+## Contributing
+
+Contributions are always welcome!
+
+Send us a message to get started.
+
+Please adhere to this project's `code of conduct`.
+
+
+## License
+
+This project is intended for personal and educational use only. All content, including designs and concepts, is the property of its creators.
+
